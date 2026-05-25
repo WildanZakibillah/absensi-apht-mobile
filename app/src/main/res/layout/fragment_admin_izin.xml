@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3FF">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6C63FF"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Kelola Izin"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvIzinCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 pengajuan"
+            android:textColor="#C4B5FD"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupIzinFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏳ Pending"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipApproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ Disetujui"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipRejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❌ Ditolak"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllIzin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📁 Semua"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <!-- List Izin -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdminIzin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3FF"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#6C63FF"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚙️ Pengaturan"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfigurasi sistem absensi"
+                android:textColor="#C4B5FD"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📍 Lokasi Kantor"
+                        android:textColor="#2D2B55"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCurrentLat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lat: -"
+                        android:textColor="#7B78A8"
+                        android:textSize="13sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCurrentLng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lng: -"
+                        android:textColor="#7B78A8"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="14dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditOfficeLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✏️ Edit Lokasi"
+                        android:textAllCaps="false"
+                        android:textColor="#6C63FF"
+                        android:textSize="13sp"
+                        app:backgroundTint="#EEF0FF"
+                        app:cornerRadius="10dp"
+                        app:elevation="0dp"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📏 Radius Absen"
+                        android:textColor="#2D2B55"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCurrentRadius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Radius: 100m"
+                        android:textColor="#7B78A8"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="14dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditRadius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✏️ Edit Radius"
+                        android:textAllCaps="false"
+                        android:textColor="#6C63FF"
+                        android:textSize="13sp"
+                        app:backgroundTint="#EEF0FF"
+                        app:cornerRadius="10dp"
+                        app:elevation="0dp"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdminLogout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="🚪 Logout Admin"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#EF4444"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="admin_primary">#4F46E5</color>
+    <color name="admin_primary_dark">#3730A3</color>
+    <color name="admin_bg_light">#F8FAFC</color>
+    <color name="admin_text_primary">#1E293B</color>
+    <color name="admin_text_secondary">#64748B</color>
+    <color name="admin_menu_selected_bg">#EEF2FF</color>
+    <color name="admin_menu_selected_icon">#4338CA</color>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#FFFFFF">
+
+    <!-- Bottom divider via foreground not supported simply; use background -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRekapNo"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#9CA3AF"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRekapNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="#2D2B55"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvRekapNip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#9CA3AF"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRekapHadir"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#4ECCA3"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRekapIzin"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#7C3AED"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRekapTerlambat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#F59E0B"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRekapAlpha"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#EF4444"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+</LinearLayout>

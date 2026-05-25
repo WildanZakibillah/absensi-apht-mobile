@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_admin_home"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/nav_admin_users"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Pengguna" />
+
+    <item
+        android:id="@+id/nav_admin_izin"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Izin" />
+
+    <item
+        android:id="@+id/nav_admin_rekap"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Rekap" />
+
+    <item
+        android:id="@+id/nav_admin_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Setelan" />
+
+</menu>
